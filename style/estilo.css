@@ -1,0 +1,381 @@
+* {
+	padding: 0px;
+	margin: 0px;
+	box-sizing: border-box;
+}
+html, body{
+    background-color: #000000;
+    font-family: 'Rubik', sans-serif;
+    width:  100%;
+    height: 100%;
+    margin: 1px 
+}
+
+
+.header-home{
+	
+	display: flex;
+    width: 100%;
+    height: 750px;
+	justify-content: space-between;
+    background-image: url("../img/jhonsnow.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+  
+
+
+}
+
+nav{
+    background-color: rgba(251, 251, 251, 0.26);
+    width: 100%;
+    padding: 2px;
+    height: 50px;
+    position:fixed;
+    top:0;
+
+    
+    
+   
+}
+nav ul{
+	margin: 0%;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: rgba(250, 250, 249, 0);
+    
+}
+nav ul li{
+	display: inline-block;
+}
+nav ul li a{
+	font-size: 1.2rem;
+	padding-right: 2rem;
+	text-transform: uppercase;
+}
+
+a{
+	text-decoration: none;
+	color: #000000;
+}
+
+.logo img
+{
+    width: 200px;
+    padding-top: 8px;
+   
+}
+
+
+nav ul li a:hover {
+  color: #abaaaa;
+  transition: .9s;
+}
+
+nav ul li a {
+  position: relative;
+}
+
+
+h1{
+    color: antiquewhite;
+   
+    
+}
+
+.sinopsis{
+    text-align: center;
+    
+    background-color: #000000;
+   
+}
+.sinopsis p {
+    color: #abaaaa;
+    padding:100px;
+    padding-top: 50px;
+    
+    
+ 
+}
+
+.hielo 
+{
+    display: flex   ;
+    padding-right: 80px;
+    
+}
+
+
+.hielo article{
+    width: 40%;
+    margin: 20px;
+ }
+
+.hielo h3
+{
+    color: aliceblue ;
+    padding-top: 220px;
+    text-align: center;
+    
+}
+
+.hielo p {
+    color: aliceblue ;
+    padding-top: 50px;
+    text-align: center;
+    
+}
+.fuego 
+{
+    display: flex   ;
+    padding-left: 80px;
+    
+}
+
+
+.fuego article{
+   width: 40%;
+   margin: 20px;
+}
+
+.fuego h3
+{
+    color: aliceblue ;
+    padding-top: 200px;
+    text-align: center;
+    
+}
+
+.fuego p {
+    color: aliceblue ;
+    padding-top: 50px;
+    text-align: center;
+    
+}
+
+footer{
+    width: 100%;
+    background-size: cover;
+    background-color: rgb(21, 21, 21);
+    background-image: linear-gradient(to bottom, #050404 ,#14262f, #27424c  );
+    height: 20%;
+    display: flex;
+    justify-content: space-between;
+    
+   
+
+    
+}
+
+ .copy { 
+    color: antiquewhite;
+    align-self: end;
+    
+}
+
+.footer-logo{
+
+display: flex;
+
+
+    
+}
+
+.footer-logo img{
+    width: 350px;
+    opacity: .3;
+    align-self: flex-end;
+
+   
+}
+
+.redes
+{
+    width: 30%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    margin: 30px;
+    flex-wrap: wrap;
+    cursor: pointer;
+    
+    
+}
+
+.icono{
+    position: relative;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    transition: all .9s;
+}
+
+.icono:hover{
+    background-color: #f62d7d;
+    box-shadow: 0 0 20px 5px  #f62d7d;
+}
+
+.icono:hover:nth-child(2){
+    background-color: #2b3dff;
+    box-shadow: 0 0 20px 5px  #2b3dff;
+}
+
+.icono:hover:nth-child(3){
+    background-color: #f91616;
+    box-shadow:0 0 20px 5px   #f91616;
+}
+
+.icono:hover:nth-child(4){
+    background-color: #0d9c27;
+    box-shadow: 0 0 20px  5px #0d9c27;
+}
+
+.icono i   {
+   
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.1rem;
+}
+
+svg circle{
+    stroke-dasharray:90;
+    transition: all 0.9s ease-in-out;
+}
+
+.icono:hover circle {
+    stroke-dasharray:220;
+  
+}
+
+/* #################### usuario ################   */
+.main-contacto{
+    height: 80%;
+    background-image: url(../img/contacto.webp);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+  
+  .login {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    width: 400px;
+    padding: 40px;
+    transform: translate(-50%, -50%);
+    background: rgba(0,0,0,.5);
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(0,0,0,.6);
+    border-radius: 10px;
+  }
+  
+  .login h1 {
+    margin: 0 0 30px;
+    padding: 0;
+    color: #fff;
+    text-align: center;
+  }
+  
+  .login .dato {
+    position: relative;
+  }
+  
+  .login .dato input {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid #fff;
+    outline: none;
+    background: transparent;
+  }
+  .login .dato label {
+    position: absolute;
+    top:0;
+    left: 0;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    pointer-events: none;
+    transition: .5s;
+  }
+  
+  .login .dato input:focus ~ label,
+  .login .dato input:valid ~ label {
+    top: -20px;
+    left: 0;
+    color: #03e9f4;
+    font-size: 12px;
+  }
+  .botonera{
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .login form button {
+    position: relative;
+    display: inline-block;
+
+    padding: 10px 20px;
+    color: #03e9f4;
+    font-size: 14px;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: .5s;
+    margin-top: 40px;
+    letter-spacing: 4px;
+    background: transparent;
+  }
+  
+  .login button:hover {
+    background: #03e9f4;
+    color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #03e9f4,
+                0 0 25px #03e9f4,
+                0 0 50px #03e9f4,
+                0 0 100px #03e9f4;
+  }
+  
+  /* ################   ARTE ################# */
+
+  main-galeria {
+
+    height: 80%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    
+    
+
+  }
+
+  .arte
+  {
+    width: 100%;
+    padding-top: 10%;
+    display: flex;
+    overflow-y: auto;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .arte a img {
+    margin: 10px;
+    
+  }
+  
+  .main-galeria h1 {
+    padding-top: 5%;
+  }
+  
+  
