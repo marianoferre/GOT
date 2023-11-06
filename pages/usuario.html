@@ -17,16 +17,28 @@
 
 <body>
     <header>
-        <nav>
+        <nav >
             <div class="logo">
                 <img src="../img/logo.png" alt="logo">
             </div>
-            <ul>
-                <li><a href="../index.html"><span class="material-symbols-outlined">
+            <ul class="menu">
+                <li class="toggle"><a href="#"><i class="fas fa-bars"></i></a></li>
+                <li class="item"><a href="../index.html"><span class="material-symbols-outlined">
                             home
                         </span></a></li>
-                <li><a href="./galeria.html">Galeria</a></li>
-                <li><a href="./usuario.html">usuario</a></li>
+
+                <li class="item"><a href="./galeria.html">Galeria</a></li>
+                <li class="item"><a href="./usuario.html">usuario</a></li>
+                <li class="item con-submenu">
+                    <a href="#">Canciones y Leyendas</a>
+                    <ul class="submenu">
+                        <li class="subitem"><a href="./casas.html">Casas</a></li>
+                        <li class="subitem"><a href="./heroes.html">Héroes</a></li>
+                        <li class="subitem"><a href="./criaturas.html">Criaturas</a></li>
+                       
+                    </ul>
+                </li>
+
             </ul>
         </nav>
 
@@ -66,10 +78,7 @@
         <div class="copy">
             <p>&copy;2023 Todos los derechos reservados.</p>
         </div>
-
-        <div class="footer-logo">
-            <img src="../img/lobo.png" alt="logo-winter">
-        </div>
+        
 
         <div class="redes">
             <div class="icono">
@@ -104,7 +113,7 @@
         </div>
 
     </footer>
-
+    <script src="../js/menu.js"></script>
 </body>
 
 </html>

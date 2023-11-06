@@ -17,23 +17,26 @@
 
 <body>
     <header class="header-home">
-        <nav>
+        <nav >
             <div class="logo">
                 <img src="./img/logo.png" alt="logo">
             </div>
-            <ul>
-                <li><a href="./index.html"><span class="material-symbols-outlined">
+            <ul class="menu">
+
+                <li class="toggle"><a href="#"><i class="fas fa-bars"></i></a></li>
+                <li class="item"><a href="./index.html"><span class="material-symbols-outlined">
                             home
                         </span></a></li>
-                <li><a href="./pages/galeria.html">Galeria</a></li>
-                <li><a href="./pages/usuario.html">usuario</a></li>
-                <li class="submenu">
-                    <a href="#">Canciones y Leyendas</a>
-                    <ul class="submenu-content">
-                        <li><a href="./pages/casas.html">Casas</a></li>
-                        <li><a href="./pages/heroes.html">Héroes</a></li>
-                        <li><a href="./pages/criaturas.html">Criaturas</a></li>
 
+                <li class="item"><a href="./pages/galeria.html">Galeria</a></li>
+                <li class="item"><a href="./pages/usuario.html">usuario</a></li>
+                <li class="item con-submenu">
+                    <a href="#">Canciones y Leyendas</a>
+                    <ul class="submenu">
+                        <li class="subitem"><a href="./pages/casas.html">Casas</a></li>
+                        <li class="subitem"><a href="./pages/heroes.html">Héroes</a></li>
+                        <li class="subitem"><a href="./pages/criaturas.html">Criaturas</a></li>
+                        
                     </ul>
                 </li>
 
@@ -46,7 +49,7 @@
 
 
 
-        <section class="sinopsis">
+        <section class="presentacion">
 
             <h1>Winter is Coming</h1>
             <p>
@@ -94,10 +97,7 @@
         <div class="copy">
             <p>&copy;2023 Todos los derechos reservados.</p>
         </div>
-
-        <div class="footer-logo">
-            <img src="./img/lobo.png" alt="logo-winter">
-        </div>
+        
 
         <div class="redes">
             <div class="icono">
@@ -132,7 +132,7 @@
         </div>
 
     </footer>
-
+<script src="./js/menu.js"></script>
 </body>
 
 </html>

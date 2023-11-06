@@ -29,87 +29,102 @@ html, body{
 }
 
 nav{
-    background-color: rgba(251, 251, 251, 0.26);
-    width: 100%;
-    padding: 2px;
-    height: 50px;
-    position:fixed;
-    top:0;
-    z-index: 10;
-    
-    
-   
-}
-nav ul{
-	margin: 0%;
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    background-color: rgba(250, 250, 249, 0);
-    
-}
-nav ul li{
-	display: inline-block;
-}
-nav ul li a{
-	font-size: 1.2rem;
-	padding-right: 2rem;
-	text-transform: uppercase;
-}
-
-a{
-	text-decoration: none;
-	color: #000000;
+  width: 100%;
+  height: 60px;
+  display: flex;
+   background-color: rgba(251, 251, 251, 0.26);
+   justify-content: space-between;
 }
 
 .logo img
 {
     width: 200px;
-    padding-top: 8px;
-   
+    padding: 15px;
 }
-.submenu-content {
+
+
+a {
+  color: rgb(6, 6, 6);
+  text-decoration: none;
+}
+.menu,
+.submenu {   
+  list-style-type: none;
+  
+}
+
+.item {
+  padding: 10px;
+  
+}
+
+.menu{
+  display: flex;
+  justify-content: space-between;
+  align-items:first baseline;
+
+  
+}
+
+.submenu{
+  background-color: rgba(251, 251, 251, 0.26);
   display: none;
-  position: absolute;
-  top: 2000%;
-  left: 0;
-  background-color: #333;
+  
 }
 
-.submenu:hover .submenu-content {
+.con-submenu:hover .submenu{
   display: block;
 }
 
-.submenu-content li {
-  display: block;
+.toggle
+{
+  display: none;
 }
 
-
-
+.menu li a {
+  display: block;
+  padding: 5px 15px 15px;
+  text-transform: uppercase;
+  
+  
+}
 
 nav ul li a:hover {
   color: #abaaaa;
   transition: .9s;
 }
 
-nav ul li a {
-  position: relative;
+.menu li.subitem a {
+  padding: 15px;
+}
+
+.con-submenu > ::after{
+  font-family: "Font Awesome 5 free";
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 900;
+  content: "\f078";
+  padding: 5px;
 }
 
 
+
+
+
+/*###########################*/
 h1{
     color: antiquewhite;
    
     
 }
 
-.sinopsis{
+.presentacion{
     text-align: center;
     
     background-color: #000000;
    
 }
-.sinopsis p {
+.presentacion p {
     color: #abaaaa;
     padding:100px;
     padding-top: 50px;
@@ -201,13 +216,7 @@ display: flex;
     
 }
 
-.footer-logo img{
-    width: 350px;
-    opacity: .3;
-    align-self: flex-end;
 
-   
-}
 
 .redes
 {
@@ -397,6 +406,7 @@ svg circle{
   /* ########## CASAS ########### */
   
   .main-casas{
+    
     padding: 5%;
     width: 100%;
     background-image: url(../img/casas/westeros.jpg);
@@ -406,16 +416,12 @@ svg circle{
   }
 
   .main-casas h1{
-    color:#fff;
-    text-align: center;
-    margin: 30px;
-    font-size: 2.3rem;
-
+  display: none;
   }
 
   .casa{
+    margin: 5%;
     display: flex;
-    margin-bottom: 5%;
     background: rgba(0,0,0,.6);
     box-sizing: border-box;
     box-shadow: 0 15px 40px rgba(0,0,0,.7);
@@ -454,7 +460,8 @@ svg circle{
  .main-personajes
  {
   
-  padding: 5%;
+ 
+  padding: 10%;
   
   background-image: linear-gradient(to right top, #070004, #070107, #07020a, #06030d, #04050f, #030813, #020c16, #000f18, #00141b, #00181d, #001c1d, #021f1d);
  
@@ -508,7 +515,7 @@ margin-bottom: 30px;
   margin-top: 0%;
   width: 100%;
   min-height: 100%;
-  background-image: url(../img/wp6580673.jpg);
+  background-image: url(../img/criaturas/fondo-criaturas.jpg);
   background-size: cover;
   
  
@@ -579,3 +586,132 @@ margin-bottom: 30px;
                 0 0 100px  #03e8f4a7;
   
  }
+
+
+ @media ( max-width: 576px )
+ {
+  
+  nav{
+    display: block;
+    text-align: center;
+    
+  }
+
+  .menu{
+    display: flex;
+     background-color: rgba(251, 251, 251, 0.26);
+     flex-wrap: wrap;
+     justify-content: space-between;
+     align-items: center;
+     margin-top: 13px;
+     z-index: 1000;
+  }
+  .menu li a {
+    display: block;
+    padding: 15px 5px;
+
+  }
+
+  .menu li.subitem a {
+    padding: 15px;
+
+  }
+  .toggle{
+    margin: auto;
+    font-size: 30px;
+  }
+  .item{
+    width: 100%;
+    text-align: center;
+    display: none;
+
+  }
+
+  .active .item {
+
+    display: block;
+
+  }
+
+  
+  
+
+  /* ################ HOME ##############*/
+
+  .header-home
+  {
+    width: 100%;
+  }
+
+  .hielo , .fuego
+  {
+    display: block;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .fuego img,
+  .hielo img
+  {
+    max-width: 500px;
+
+    margin: 0;
+  }
+
+  .presentacion
+  {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  article{
+    padding-top: 0%;
+    margin-top: 10px;
+  }
+
+  .hielo article
+  {
+    margin-left: 5%;
+    width: 90%;
+  }
+ .fuego{
+ justify-content: flex-start;
+
+  }
+  .fuego img{
+   
+  }
+
+  .fuego article
+  {
+    margin: 5%;
+    width: 90%;
+  }
+
+
+  footer{
+    display: block;
+    
+    
+
+  }
+
+  .copy{
+    margin-top: 15%;
+    text-align: center;
+    font-size: 20px;
+    
+  }
+
+.redes
+{
+  padding: 5%;
+  width: 90%;
+
+}
+.redes .icono{
+  margin: 15px;
+}
+
+  }
+ 

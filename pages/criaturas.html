@@ -7,6 +7,9 @@
     <script src="https://kit.fontawesome.com/40d54c2642.js" crossorigin="anonymous"></script>
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="../style/estilo.css">
@@ -18,21 +21,32 @@
 
 <body>
     <header>
-        <nav>
+        <nav >
             <div class="logo">
                 <img src="../img/logo.png" alt="logo">
             </div>
-            <ul>
-                <li><a href="../index.html"><span class="material-symbols-outlined">
+            <ul class="menu">
+                <li class="toggle"><a href="#"><i class="fas fa-bars"></i></a></li>
+                <li class="item"><a href="../index.html"><span class="material-symbols-outlined">
                             home
                         </span></a></li>
-                <li><a href="./galeria.html">Galeria</a></li>
-                <li><a href="./usuario.html">usuario</a></li>
+
+                <li class="item"><a href="./galeria.html">Galeria</a></li>
+                <li class="item"><a href="./usuario.html">usuario</a></li>
+                <li class="item con-submenu">
+                    <a href="#">Canciones y Leyendas</a>
+                    <ul class="submenu">
+                        <li class="subitem"><a href="./casas.html">Casas</a></li>
+                        <li class="subitem"><a href="./heroes.html">Héroes</a></li>
+                        <li class="subitem"><a href="./criaturas.html">Criaturas</a></li>
+                        
+                    </ul>
+                </li>
+
             </ul>
         </nav>
 
     </header>
-
 
     <main class="main-criaturas">
         <h1>Criaturas de la saga Game of Thrones</h1>
@@ -195,10 +209,7 @@
         <div class="copy">
             <p>&copy;2023 Todos los derechos reservados.</p>
         </div>
-
-        <div class="footer-logo">
-            <img src="../img/lobo.png" alt="logo-winter">
-        </div>
+        
 
         <div class="redes">
             <div class="icono">
@@ -232,10 +243,12 @@
 
         </div>
 
+    
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
+        <script src="../js/menu.js"></script>
 </body>
 
 </html>
