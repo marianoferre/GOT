@@ -124,10 +124,16 @@ h1{
     background-color: #000000;
    
 }
+
+main
+{
+  font-family: 'MedievalSharp', cursive;
+}
 .presentacion p {
     color: #abaaaa;
     padding:100px;
     padding-top: 50px;
+    font-size: 1.3rem;
     
     
  
@@ -142,6 +148,7 @@ h1{
 
 
 .hielo article{
+  
     width: 40%;
     margin: 20px;
  }
@@ -151,13 +158,14 @@ h1{
     color: aliceblue ;
     padding-top: 220px;
     text-align: center;
-    
+    font-size: 1.4rem;
 }
 
 .hielo p {
     color: aliceblue ;
     padding-top: 50px;
-    text-align: center;
+    padding: 40px;
+    font-size: 1.3rem;
     
 }
 .fuego 
@@ -178,13 +186,13 @@ h1{
     color: aliceblue ;
     padding-top: 200px;
     text-align: center;
-    
+    font-size: 1.4rem;
 }
 
 .fuego p {
     color: aliceblue ;
     padding-top: 50px;
-    text-align: center;
+    font-size: 1.3rem;
     
 }
 
@@ -410,7 +418,7 @@ svg circle{
     padding: 5%;
     width: 100%;
     background-image: url(../img/casas/westeros.jpg);
-    
+    font-family: 'MedievalSharp', cursive;
     
     
   }
@@ -451,8 +459,9 @@ svg circle{
   {
     
     margin-top: 50px;
-    font-size: 1.4rem;
-    color:#fff;
+    font-size: 1.6rem;
+    color:#faf8f8;
+    font-weight: bold;
   }
 
  /* ########## heroes ########### */
@@ -464,7 +473,7 @@ svg circle{
   padding: 10%;
   
   background-image: linear-gradient(to right top, #070004, #070107, #07020a, #06030d, #04050f, #030813, #020c16, #000f18, #00141b, #00181d, #001c1d, #021f1d);
- 
+  font-family: 'MedievalSharp', cursive;
 
  }
 
@@ -500,7 +509,7 @@ margin-bottom: 30px;
  {
     
   color: #ffffff ;
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   padding: 5%;
 
   
@@ -517,7 +526,7 @@ margin-bottom: 30px;
   min-height: 100%;
   background-image: url(../img/criaturas/fondo-criaturas.jpg);
   background-size: cover;
-  
+  font-family: 'MedievalSharp', cursive;
  
 
  }
@@ -588,7 +597,7 @@ margin-bottom: 30px;
  }
 
 
- @media ( max-width: 576px )
+ @media ( max-width: 690px )
  {
   
   nav{
@@ -603,7 +612,7 @@ margin-bottom: 30px;
      flex-wrap: wrap;
      justify-content: space-between;
      align-items: center;
-     margin-top: 13px;
+     margin-top: 4px;
      z-index: 1000;
   }
   .menu li a {
@@ -617,6 +626,7 @@ margin-bottom: 30px;
 
   }
   .toggle{
+    display: block;
     margin: auto;
     font-size: 30px;
   }
@@ -631,6 +641,11 @@ margin-bottom: 30px;
 
     display: block;
 
+  }
+
+  .submenu-active .submenu
+  {
+    display: block;
   }
 
   
@@ -653,9 +668,9 @@ margin-bottom: 30px;
   .fuego img,
   .hielo img
   {
-    max-width: 500px;
+    width: 100%;
 
-    margin: 0;
+   
   }
 
   .presentacion
@@ -671,22 +686,49 @@ margin-bottom: 30px;
 
   .hielo article
   {
-    margin-left: 5%;
+    padding-right: 5%;
     width: 90%;
   }
+  .hielo h3{
+    padding-top: 20px;
+  }
+
+
+
+.hielo p {
+    
+    padding-bottom: 50px;
+    
+    
+}
  .fuego{
+  display: flex;
+  flex-direction: column-reverse;
  justify-content: flex-start;
 
   }
-  .fuego img{
-   
+ 
+  .fuego h3
+  {
+      
+      padding-top: 20px;
+     
+      
   }
-
+  
+  .fuego p {
+      
+      padding-bottom: 50px;
+     
+      
+  }
+  
   .fuego article
   {
     margin: 5%;
     width: 90%;
   }
+
 
 
   footer{
@@ -705,7 +747,7 @@ margin-bottom: 30px;
 
 .redes
 {
-  padding: 5%;
+  
   width: 90%;
 
 }
@@ -713,5 +755,68 @@ margin-bottom: 30px;
   margin: 15px;
 }
 
+  }
+
+  @media ( max-width: 1400px )
+
+  {
+    .header-home
+    {
+      width: 100%;
+    }
+
+    .hielo, .fuego
+    {
+      flex-direction: column;
+    }
+    .hielo article
+    {
+      width: 100%;
+      
+    }
+
+    .hielo h3{
+      padding-top: 20px;
+    }
+  
+  
+  
+  .hielo p {
+      
+      padding-bottom: 50px;
+      
+      
+  }
+
+    .fuego
+    {
+      flex-direction:column-reverse;
+    }
+    .fuego img{
+      height: auto;
+      width: 80%;
+
+    }
+
+    .fuego article
+    {
+      margin: 3%;
+    width: 90%;
+    }
+
+    .fuego h3
+  {
+      
+      padding-top: 20px;
+     
+      
+  }
+  
+  .fuego p {
+      
+      padding-bottom: 50px;
+     
+      
+  }
   }
  
