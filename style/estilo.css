@@ -112,7 +112,7 @@ nav ul li a:hover {
 
 
 
-/*###########################*/
+/*#############################################################*/
 h1{
     color: antiquewhite;
     font-size: 3rem;
@@ -384,7 +384,7 @@ svg circle{
                 0 0 100px #03e9f4;
   }
   
-  /* ################   ARTE ################# */
+  /* ################   ARTE    DESKTOP ################# */
 
   .main-galeria {
 
@@ -394,16 +394,27 @@ svg circle{
 
   }
 
+  
   .arte
   {
     width: 100%;
     padding-top: 10%;
     display: flex;
-    overflow-y: auto;
+    
     flex-wrap: wrap;
     justify-content: center;
   }
-
+  .overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Fondo oscuro con opacidad del 50% */
+    z-index: 99; /* Asegura que esté encima de otros elementos */
+   }
+  
   .arte a img {
     margin: 10px;
     
@@ -415,6 +426,7 @@ svg circle{
     font-family: 'MedievalSharp', cursive;
     font-size: 3rem;
   }
+  
   
   /* ########## CASAS ########### */
   
@@ -433,6 +445,7 @@ svg circle{
   }
 
   .casa{
+    padding:10px;
     margin: 5%;
     display: flex;
     background: rgba(0,0,0,.6);
@@ -612,6 +625,14 @@ margin-bottom: 30px;
   .header{
     width: 100%;
   }
+  ul.menu {
+    position: relative;
+    z-index: 1000;
+   }
+   ul.menu.active{
+    position: relative;
+    z-index: 100;
+   }
   
   nav{
     width: 100%;
@@ -664,7 +685,7 @@ margin-bottom: 30px;
   
   
 
-  /* ################ HOME ##############*/
+  /* ################ HOME  TABLET ##############*/
   .presentacion p
   {
    
@@ -764,32 +785,53 @@ margin-bottom: 30px;
 }
 
 
- /* ################   ARTE ################# */
+ /* ################   ARTE TABLET  ################# */
 
 
+ .main-galeria{
+  padding-top: 250px;
+  
+ }
 
-.arte
-{
-  width: 100%;
-  padding-top: 10%;
-  display: flex;
-  overflow-y: auto;
-  flex-wrap: wrap;
-  justify-content: center;
+ /* ################   USUARIO TABLET  ################# */
+.login{
+  width: 70%;
+  margin-top: 230px;
 }
 
-.arte a img {
-  margin: 10px;
+
+/* ################   CASAS TABLET  ################# */
+.main-casas{
+    
+ padding-top: 250px;
+  
   
 }
 
-.main-galeria h1 {
-  padding-top: 5%;
-  text-align: center;
-  font-family: 'MedievalSharp', cursive;
-  font-size: 3rem;
+.main-casas h1{
+display: none;
 }
 
+.casa{
+ display:flex ;
+ flex-direction: column;
+}
+
+.stark, .lannister,  .martell{
+  flex-direction: column-reverse;
+}
+
+.casa img{
+  margin: auto;
+}
+
+.casa .descripcion p
+  {
+    
+    
+    font-size: 1.4rem;
+   
+  }
   }
 
   /* #################################################################### */
@@ -839,7 +881,8 @@ margin-bottom: 30px;
      display: block;
  
    }
- 
+
+   
    .submenu-active .submenu
    {
      display: block;
@@ -854,135 +897,43 @@ margin-bottom: 30px;
    
    
  
-   /* ################ HOME ##############*/
-   .presentacion p
-   {
-    
-    font-size: 1.2rem;
-   padding: auto ;
-    
-   }
-   
-   .hielo , .fuego
-   {
-     width: 100%;
-     display: block;
-    padding: 10px  ;
-     
-   }
- 
-   .fuego img,
-   .hielo img
-   {
-     width: 100%;
-    padding-top: 5px;
-    margin: auto;
-    
-   }
  
  
-   .hielo article
-   {
-     margin: auto;
-     width: 90%;
-   }
-   .hielo h3{
-     padding-top: 15%;
-     font-size: 1.2rem;
-   }
+  /* ################   ARTE MOBILE ################# */
  
  
  
- .hielo p {
-     
-     padding-bottom: 5%;
-     
-     
- }
-  .fuego{
-   display: flex;
-   flex-direction: column-reverse;
-  justify-content: flex-start;
- 
-   }
-  
-   .fuego h3
-   {
-     padding-top: 15%;
-     font-size: 1.2rem;
-       
-   }
-   
-   .fuego p {
-       
-     padding-bottom: 5%;
-     padding: 40px;
-      
-       
-   }
-   
-   .fuego article
-   {
-     margin: auto;
-     width: 90%;
-   }
- 
- 
- 
-   footer{
-     display: block;
-     
-     
- 
-   }
- 
-   .copy{
-     margin-top: 15%;
-     text-align: center;
-     font-size: 20px;
-     
-   }
- 
- .redes
- {
-   
-   width: 90%;
- 
- }
- .redes .icono{
-   margin: 15px;
- }
- 
- 
-  /* ################   ARTE ################# */
- 
- 
- 
- .arte
- {
-   width: 100%;
-   padding-top: 10%;
-   display: flex;
-   overflow-y: auto;
-   flex-wrap: wrap;
-   justify-content: center;
- }
- 
- .arte a img {
-   margin: 10px;
-   
- }
-.main-galeria{
-  padding-top: 600px;
 
- }
- .main-galeria h1 {
-   padding-top: 5%;
-   text-align: center;
-   font-family: 'MedievalSharp', cursive;
-   font-size: 3rem;
+
+ .arte{
+  overflow: hidden;
+  margin-left: 0%;
  }
  
+  .arte a {
+    width: 50%;
+  }
+  .arte a img {
+    margin:0;
+    
+  }
+  /* ################   USUARIO mobile  ################# */
+.login{
+  width: 90%;
+  
+}
+
+/* ################   CASAS celular  ################# */
+
+
+.casa .descripcion p
+  {
+    
+    
+    font-size: 1.1rem;
+   
+  }
+  
    }
  
  

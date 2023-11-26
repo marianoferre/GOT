@@ -2,22 +2,22 @@
 
 const toggle = document.querySelector('.toggle');
 const menu = document.querySelector('.menu');
+const overlay = document.querySelector('.overlay')
 
 /* Toggle mobile menu */
 function toggleMenu() {
-    if (menu.classList.contains("active")) {
-        menu.classList.remove("active");
-        
-        // adds the menu (hamburger) icon 
-        toggle.querySelector("a").innerHTML = "<i class='fas fa-bars'></i>";
-    } else {
-        menu.classList.add("active");
-        
-        // adds the close (x) icon 
-        toggle.querySelector("a").innerHTML = "<i class='fas fa-times'></i>";
-    }
+  if (menu.classList.contains("active")) {
+    menu.classList.remove("active");
+    toggle.querySelector("a").innerHTML = "<i class='fas fa-bars'></i>";
+    overlay.style.display = "none"; // Oculta el overlay cuando se cierra el menú
+
+  } else {
+    menu.classList.add("active");
+    toggle.querySelector("a").innerHTML = "<i class='fas fa-times'></i>";
+    overlay.style.display = "block"; // Muestra el overlay cuando se abre el menú
+  }
 }
-/* Event Listener */
+
 toggle.addEventListener('click', toggleMenu, false);
 
 // ################## submenu ################################
