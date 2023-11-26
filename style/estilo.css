@@ -9,6 +9,7 @@ html, body{
     width:  100%;
     height: 100%;
     margin: 1px 
+    
 }
 
 
@@ -114,6 +115,7 @@ nav ul li a:hover {
 /*###########################*/
 h1{
     color: antiquewhite;
+    font-size: 3rem;
    
     
 }
@@ -156,16 +158,16 @@ main
 .hielo h3
 {
     color: aliceblue ;
-    padding-top: 220px;
+    padding-top: 150px;
     text-align: center;
-    font-size: 1.4rem;
+    font-size: 1.3rem;
 }
 
 .hielo p {
     color: aliceblue ;
     padding-top: 50px;
     padding: 40px;
-    font-size: 1.3rem;
+    
     
 }
 .fuego 
@@ -179,20 +181,21 @@ main
 .fuego article{
    width: 40%;
    margin: 20px;
+  
 }
 
 .fuego h3
 {
     color: aliceblue ;
-    padding-top: 200px;
+    padding-top: 150px;
     text-align: center;
-    font-size: 1.4rem;
+    font-size: 1.3rem;
 }
 
 .fuego p {
     color: aliceblue ;
     padding-top: 50px;
-    font-size: 1.3rem;
+   
     
 }
 
@@ -289,25 +292,25 @@ svg circle{
 
 /* #################### usuario ################   */
 .main-contacto{
-    height: 80%;
+    height: auto;
     background-image: url(../img/contacto.webp);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    display: flex;
 }
 
   
   .login {
-    position: absolute;
-    top: 40%;
-    left: 50%;
-    width: 400px;
-    padding: 40px;
-    transform: translate(-50%, -50%);
+    padding: 5%;
+    width: 30%;
+    margin: auto;
     background: rgba(0,0,0,.5);
     box-sizing: border-box;
     box-shadow: 0 15px 25px rgba(0,0,0,.6);
     border-radius: 10px;
+    margin-top: 10%;
+    margin-bottom: 10%;
   }
   
   .login h1 {
@@ -409,6 +412,8 @@ svg circle{
   .main-galeria h1 {
     padding-top: 5%;
     text-align: center;
+    font-family: 'MedievalSharp', cursive;
+    font-size: 3rem;
   }
   
   /* ########## CASAS ########### */
@@ -472,7 +477,8 @@ svg circle{
  
   padding: 10%;
   
-  background-image: linear-gradient(to right top, #070004, #070107, #07020a, #06030d, #04050f, #030813, #020c16, #000f18, #00141b, #00181d, #001c1d, #021f1d);
+  background-image: url(../img/criaturas/fondo-criaturas.jpg);
+  background-size: cover;
   font-family: 'MedievalSharp', cursive;
 
  }
@@ -597,34 +603,35 @@ margin-bottom: 30px;
  }
 
 
- @media ( max-width: 690px )
+ @media ( max-width: 1300px )
  {
+
+  body{
+    width: 100%;
+  }
+  .header{
+    width: 100%;
+  }
   
   nav{
+    width: 100%;
     display: block;
     text-align: center;
     
   }
 
   .menu{
-    display: flex;
+    width: 100%;
+    height: auto;
+    display: block;
      background-color: rgba(251, 251, 251, 0.26);
-     flex-wrap: wrap;
      justify-content: space-between;
      align-items: center;
      margin-top: 4px;
      z-index: 1000;
   }
-  .menu li a {
-    display: block;
-    padding: 15px 5px;
+  
 
-  }
-
-  .menu li.subitem a {
-    padding: 15px;
-
-  }
   .toggle{
     display: block;
     margin: auto;
@@ -648,56 +655,57 @@ margin-bottom: 30px;
     display: block;
   }
 
+  body {
+
+    width: 100%;
+
+  }
+
   
   
 
   /* ################ HOME ##############*/
-
-  .header-home
+  .presentacion p
   {
-    width: 100%;
+   
+   font-size: 1.2rem;
+  padding: auto ;
+   
   }
-
+  
   .hielo , .fuego
   {
+    width: 100%;
     display: block;
-    padding-left: 10px;
-    padding-right: 10px;
+   padding: 10px  ;
+    
   }
 
   .fuego img,
   .hielo img
   {
     width: 100%;
-
+   padding-top: 5px;
+   margin: auto;
    
   }
 
-  .presentacion
-  {
-    padding-left: 0px;
-    padding-right: 0px;
-  }
-
-  article{
-    padding-top: 0%;
-    margin-top: 10px;
-  }
 
   .hielo article
   {
-    padding-right: 5%;
+    margin: auto;
     width: 90%;
   }
   .hielo h3{
-    padding-top: 20px;
+    padding-top: 15%;
+    font-size: 1.2rem;
   }
 
 
 
 .hielo p {
     
-    padding-bottom: 50px;
+    padding-bottom: 5%;
     
     
 }
@@ -710,22 +718,22 @@ margin-bottom: 30px;
  
   .fuego h3
   {
-      
-      padding-top: 20px;
-     
+    padding-top: 15%;
+    font-size: 1.2rem;
       
   }
   
   .fuego p {
       
-      padding-bottom: 50px;
+    padding-bottom: 5%;
+    padding: 40px;
      
       
   }
   
   .fuego article
   {
-    margin: 5%;
+    margin: auto;
     width: 90%;
   }
 
@@ -755,68 +763,228 @@ margin-bottom: 30px;
   margin: 15px;
 }
 
+
+ /* ################   ARTE ################# */
+
+
+
+.arte
+{
+  width: 100%;
+  padding-top: 10%;
+  display: flex;
+  overflow-y: auto;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.arte a img {
+  margin: 10px;
+  
+}
+
+.main-galeria h1 {
+  padding-top: 5%;
+  text-align: center;
+  font-family: 'MedievalSharp', cursive;
+  font-size: 3rem;
+}
+
   }
 
-  @media ( max-width: 1400px )
+  /* #################################################################### */
 
+  @media ( max-width: 576px )
   {
-    .header-home
-    {
-      width: 100%;
-    }
-
-    .hielo, .fuego
-    {
-      flex-direction: column;
-    }
-    .hielo article
-    {
-      width: 100%;
-      
-    }
-
-    .hielo h3{
-      padding-top: 20px;
-    }
-  
-  
-  
-  .hielo p {
-      
-      padding-bottom: 50px;
-      
-      
-  }
-
-    .fuego
-    {
-      flex-direction:column-reverse;
-    }
-    .fuego img{
-      height: auto;
-      width: 80%;
-
-    }
-
-    .fuego article
-    {
-      margin: 3%;
-    width: 90%;
-    }
-
-    .fuego h3
-  {
-      
-      padding-top: 20px;
-     
-      
-  }
-  
-  .fuego p {
-      
-      padding-bottom: 50px;
-     
-      
-  }
-  }
  
+   body{
+     width: 100%;
+   }
+   header{
+     width: 100%;
+     
+   }
+
+   ul.menu {
+    position: relative;
+    z-index: 1000;
+   }
+   ul.menu.active{
+    position: relative;
+    z-index: 100;
+   }
+   nav{
+     width: 100%;
+     display: block;
+     text-align: center;
+     
+   }
+ 
+ 
+   .toggle{
+     display: block;
+     margin: auto;
+     font-size: 30px;
+     
+   }
+   .item{
+     width: 100%;
+     text-align: center;
+     display: none;
+ 
+   }
+ 
+   .active .item {
+ 
+     display: block;
+ 
+   }
+ 
+   .submenu-active .submenu
+   {
+     display: block;
+   }
+ 
+   body {
+ 
+     width: 100%;
+ 
+   }
+ 
+   
+   
+ 
+   /* ################ HOME ##############*/
+   .presentacion p
+   {
+    
+    font-size: 1.2rem;
+   padding: auto ;
+    
+   }
+   
+   .hielo , .fuego
+   {
+     width: 100%;
+     display: block;
+    padding: 10px  ;
+     
+   }
+ 
+   .fuego img,
+   .hielo img
+   {
+     width: 100%;
+    padding-top: 5px;
+    margin: auto;
+    
+   }
+ 
+ 
+   .hielo article
+   {
+     margin: auto;
+     width: 90%;
+   }
+   .hielo h3{
+     padding-top: 15%;
+     font-size: 1.2rem;
+   }
+ 
+ 
+ 
+ .hielo p {
+     
+     padding-bottom: 5%;
+     
+     
+ }
+  .fuego{
+   display: flex;
+   flex-direction: column-reverse;
+  justify-content: flex-start;
+ 
+   }
+  
+   .fuego h3
+   {
+     padding-top: 15%;
+     font-size: 1.2rem;
+       
+   }
+   
+   .fuego p {
+       
+     padding-bottom: 5%;
+     padding: 40px;
+      
+       
+   }
+   
+   .fuego article
+   {
+     margin: auto;
+     width: 90%;
+   }
+ 
+ 
+ 
+   footer{
+     display: block;
+     
+     
+ 
+   }
+ 
+   .copy{
+     margin-top: 15%;
+     text-align: center;
+     font-size: 20px;
+     
+   }
+ 
+ .redes
+ {
+   
+   width: 90%;
+ 
+ }
+ .redes .icono{
+   margin: 15px;
+ }
+ 
+ 
+  /* ################   ARTE ################# */
+ 
+ 
+ 
+ .arte
+ {
+   width: 100%;
+   padding-top: 10%;
+   display: flex;
+   overflow-y: auto;
+   flex-wrap: wrap;
+   justify-content: center;
+ }
+ 
+ .arte a img {
+   margin: 10px;
+   
+ }
+.main-galeria{
+  padding-top: 600px;
+
+ }
+ .main-galeria h1 {
+   padding-top: 5%;
+   text-align: center;
+   font-family: 'MedievalSharp', cursive;
+   font-size: 3rem;
+ }
+ 
+   }
+ 
+ 
+
+  
